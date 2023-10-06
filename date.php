@@ -21,10 +21,18 @@
 // echo date("d-m-Y", $data). "<br>";
 // echo date("d-m-Y H:i", $data). "<br>";
 // echo date("Y", $data). "<br>";
+
 $atual = new DateTime();
 $especifica = new DateTime('1990-01-22');
 $texto = new DateTime(' +1month');
-print_r($atual);
-print_r($especifica);
-print_r($texto);
+// print_r($atual);
+// print_r($especifica);
+// print_r($texto);
+
+echo $atual->format('d-m-Y-H:i:s');
+?><br /><?php
+echo $especifica->format('1990-01-22');
+?><br /><?php
+echo $texto->format('d-m-Y H:i:s');
+?><br /><?php
 ?>
