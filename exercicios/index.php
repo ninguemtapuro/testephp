@@ -1,5 +1,6 @@
+<p>Teste de require</p>
 <?php
-include "teste.php";
+require "teste.php";
 ?>
 
 <p>Apóes o incluede</p>
